@@ -2,19 +2,23 @@
     "name": "parcel",
     "version": "1.0.0",
     "description": "",
+    "type": "module",
     "scripts": {
-      "dev": "parcel ./src/index.html",
-      "build": "parcel build ./src/index.html --dist-dir docs --public-url ./",
-      "clean": "del-cli ./.parcel-cache ./docs ./dist",
-      "start": "node --watch ./src/index.js"
+        "dev": "parcel ./gissafrontend/src/index.html",
+        "build": "parcel build ./gissafrontend/index.html --dist-dir docs --public-url ./",
+        "clean": "del-cli ./.parcel-cache ./docs ./dist",
+        "start": "node --watch ./gissabackend/src/index.js"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-      "del-cli": "^5.1.0",
-      "parcel": "^2.11.0",
-      "express": "^4.19.1",
-      "express-validator": "^7.2.0"
+        "del-cli": "^5.1.0",
+        "express": "^4.21.0",
+        "express-validator": "^7.2.0",
+        "parcel": "^2.11.0"
+    },
+    "dependencies": {
+        "cors": "^2.8.5"
     }
-  }
+}

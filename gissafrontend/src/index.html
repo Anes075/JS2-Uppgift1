@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./main.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Gissa Nummret</h1>
+    <p id="textbox">Gissa mellan 1 till 3</p>
+        <form>
+            <input type="number" id="playerGuess" min="1" max="3">
+            <input type="submit" value="Gissa">
+        </form>    
+    <div id="leaderboard"></div>
 </body>
 </html>
