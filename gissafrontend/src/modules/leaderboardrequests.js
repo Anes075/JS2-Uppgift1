@@ -3,7 +3,7 @@ const baseURL = 'http://localhost:3000/scores';
 async function getScores(){
     const res = await fetch(baseURL);
     const leaderboard = await res.json();
-     console.log(leaderboard);
+     leaderboard.forEach(element => console.log(element));
     return leaderboard;
 }
 

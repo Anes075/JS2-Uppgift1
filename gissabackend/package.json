@@ -1,0 +1,20 @@
+{
+    "name": "parcel",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "scripts": {
+        "start": "node --watch ./gissabackend/src/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "del-cli": "^5.1.0",
+        "express": "^4.21.0",
+        "express-validator": "^7.2.0"
+    },
+    "dependencies": {
+        "cors": "^2.8.5"
+    }
+}
